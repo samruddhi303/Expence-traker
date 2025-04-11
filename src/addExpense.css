@@ -1,0 +1,10 @@
+.add-expence{
+    background-color: azure;
+    height: auto;
+    width: 500px;
+    box-shadow: inset;
+}
+.add-cat{
+    background-color: white;
+    border: solid black ;
+}
