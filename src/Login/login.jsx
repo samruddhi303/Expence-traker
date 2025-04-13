@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 import axios from 'axios';
 
 const Login = () => {
@@ -12,16 +12,46 @@ const Login = () => {
     e.preventDefault();
     const res = await axios.post('/api/login', formData);
     localStorage.setItem('token', res.data.token);
-    alert('Login successful');
+    alert('Login successful!');
   };
 
   return (
-    <form onSubmit={handleSubmit} className="p-4">
-      <input name="email" value={formData.email} onChange={handleChange} placeholder="Email" required className="border p-2" /><br/>
-      <input name="password" type="password" value={formData.password} onChange={handleChange} placeholder="Password" required className="border p-2 mt-2" /><br/>
-      <button type="submit" className="bg-blue-500 text-white px-4 py-2 mt-2">Login</button>
-    </form>
+    <div className="card shadow-sm mt-4">
+      <div className="card-body">
+        <h4 className="mb-3">Login</h4>
+        <form onSubmit={handleSubmit}>
+          <input className="form-control mb-2" type="email" name="email" placeholder="Email" onChange={handleChange} required />
+          <input className="form-control mb-3" type="password" name="password" placeholder="Password" onChange={handleChange} required />
+          <button className="btn btn-success w-100" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
   );
 };
+
+export default Login;*/
+// src/components/Login.js
+
+
+import React from 'react';
+
+const Login = () => {
+  return (
+    <div>
+      <h2>Login Page</h2>
+      <form>
+        <div className="mb-3">
+          <label className="form-label">Email</label>
+          <input type="email" className="form-control" required />
+        </div>
+        <div className="mb-3">
+          <label className="form-label">Password</label>
+          <input type="password" className="form-control" required />
+        </div>
+        <button type="submit" className="btn btn-primary">Login</button>
+      </form>
+    </div>
+  );
+}
 
 export default Login;

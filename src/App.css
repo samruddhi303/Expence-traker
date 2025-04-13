@@ -1,4 +1,4 @@
-#root {
+/*#root {
   max-width: 1500px;
   margin: 0 auto;
   padding: 2rem;
@@ -35,4 +35,71 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}*/
+/* Ensure the body has some margin and padding reset */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  min-height: 100vh;
 }
+
+.main-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.expense-box {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+/* Center the whole app content */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+/* Optional: center forms or card-style elements */
+.center-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Text center helper */
+.text-center {
+  text-align: center;
+}
+
+/* Responsive fix */
+@media (max-width: 600px) {
+  .center-box {
+    padding: 20px;
+  }
+}
+.auth-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.auth-box {
+  width: 300px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
